@@ -1,5 +1,6 @@
 //Busca a  bibioteca http
 const http = require('http');
+var request = require('request');
 
 
 //seta o ip ou server que sera execultado
