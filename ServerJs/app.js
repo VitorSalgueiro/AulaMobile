@@ -24,11 +24,8 @@ request('http://viacep.com.br/ws/'+ cep +'/json/', function (error, response, bo
   poderemos acessar os atributos do objeto normalmente. */
   var json = JSON.parse(body)
     cidade = json.localidade;
-    
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/plain');
-    res.end('Faccar, teste!\n');
 
+});
 });
 
 server.listen(port, hostname, () => {
